@@ -36,7 +36,7 @@ a {
   line-height: 24px;
   letter-spacing: 1.1em;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #131313;
   padding: 28px 80px;
   -webkit-transition: .2s;
@@ -76,7 +76,7 @@ a {
 }
 
 .header__nav-link:hover {
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #131313;
 }
 
@@ -274,7 +274,7 @@ a {
   font-size: 14px;
   line-height: 17px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #131313;
   padding: 2px 0;
   margin-bottom: 10px;
@@ -291,7 +291,121 @@ a {
   text-align: left;
   font-size: 14px;
   line-height: 120%;
-  color: #131313;
   width: 285px;
+}
+
+.order__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.order__info {
+  width: 420px;
+  margin-right: 150px;
+}
+
+.order__info-title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  margin-bottom: 41px;
+}
+
+.order__info-text {
+  font-size: 14px;
+  line-height: 120%;
+  margin-bottom: 30px;
+}
+
+.order__form-input {
+  width: 420px;
+  border: none;
+  border-bottom: 1px solid #131313;
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+
+.order__form-input:focus-visible {
+  outline: none;
+}
+
+.order__form-input::-webkit-input-placeholder {
+  font-size: 14px;
+  line-height: 120%;
+  color: #6F6F6F;
+  opacity: 0.5;
+}
+
+.order__form-input:-ms-input-placeholder {
+  font-size: 14px;
+  line-height: 120%;
+  color: #6F6F6F;
+  opacity: 0.5;
+}
+
+.order__form-input::-ms-input-placeholder {
+  font-size: 14px;
+  line-height: 120%;
+  color: #6F6F6F;
+  opacity: 0.5;
+}
+
+.order__form-input::placeholder {
+  font-size: 14px;
+  line-height: 120%;
+  color: #6F6F6F;
+  opacity: 0.5;
+}
+
+.order__form-input:last-child {
+  margin-bottom: 20px;
+}
+
+.order__form-radios {
+  margin-bottom: 50px;
+}
+
+.order__radios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 286px;
+}
+
+.order__radios-title {
+  font-size: 14px;
+  line-height: 120%;
+  color: #6F6F6F;
+  opacity: 0.5;
+  margin-bottom: 10px;
+}
+
+.order__radios-input {
+  display: none;
+}
+
+.order__radios-label {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+  width: 80px;
+  height: 12px;
+  border-radius: 30px;
+}
+
+.order__radios-label--1 {
+  background-color: #6F6F6F;
+}
+
+.order__radios-label--2 {
+  background-color: #ffffff;
+  border: 1px solid #6F6F6F;
+}
+
+.order__radios-label--3 {
+  background-color: #FF4040;
 }
 /*# sourceMappingURL=main.css.map */
