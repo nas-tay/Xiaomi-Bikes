@@ -387,13 +387,10 @@ a {
 }
 
 .order__radios-label {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
-  cursor: pointer;
   width: 80px;
   height: 12px;
   border-radius: 30px;
+  cursor: pointer;
 }
 
 .order__radios-label--1 {
