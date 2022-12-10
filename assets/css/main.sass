@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap')
+@import _variables.sass
+*
+    box-sizing: border-box
+
+body
+    font-family: 'Inter', Sans-serif
+    color: $black
+a
+    text-decoration: none
+.container
+    max-width: 1200px
+    margin: 0 auto
+.jcsb
+    justify-content: space-between
+.aic 
+    align-items: center
+.btn
+    display: inline-block
+    font-size: 20px
+    line-height: 24px
+    letter-spacing: 1.1em
+    text-transform: uppercase
+    color: #FFFFFF
+    background-color: $black
+    padding: 28px 80px
+    transition: .2s
+    &:hover
+        background-color: $red
+.header
+    margin-bottom: 100px
+    &__wrapper
+        display: flex
+    &__nav-list
+        display: flex
+        margin-right: 75px
+    &__nav-link
+        font-size: 14px
+        line-height: 17px
+        text-transform: uppercase
+        color: $black
+        padding: 40px 20px
+        margin-right: 50px
+        transition: .3s
+        &:hover
+            color: #FFFFFF
+            background-color: $black
+
+.intro
+    margin-bottom: 10.5%
+    &__wrapper
+        display: flex
+        align-items: end
+    &__title
+        font-size: 64px
+        line-height: 77px
+        margin-bottom: 5px
+    &__subtitle
+        font-size: 32px
+        line-height: 39px
+        color: $gray
+        margin-bottom: 60px
+    &__text
+        font-size: 14px
+        line-height: 120%
+        max-width: 420px
+        margin-bottom: 20px
+        &:last-of-type
+            margin-bottom: 80px
+    &__right-slider
+        position: relative
+        max-width: 630px
+        overflow: hidden
+        border: none
+    &__slider-dots
+        position: absolute
+        top: 52px
+        right: -20px
+        & > li
+            padding: 0 20px
+            cursor: pointer
+            & > button
+                font-size: 0
+                width: 2px
+                height: 25px
+                background: $black
+                border-radius: 7px
+                padding: 0
+                margin-bottom: 10px
+                border: none
+                cursor: pointer
+                transition: .5s
+                &:hover
+                    background: $red
+        & > .slick-active > button
+            background: $red
+            &:focus
+                outline: none !important
+    &__right-info
+        display: flex
+        padding: 0 60px
+    &__right-item
+        text-align: center
+    &__right-title
+        font-weight: 700
+        font-size: 14px
+        line-height: 17px
+        text-transform: uppercase
+        margin-bottom: 13px
+        &--margin
+            margin-bottom: 5px
+    &__right-descr
+        font-size: 12px
+        line-height: 15px
+        text-transform: lowercase
+        max-width: 160px
+.advantages
+    margin-bottom: 10.5%
+    &__wrapper
+        display: flex
+    &__image
+        margin-right: 60px
+    &__right
+        display: flex
+        flex-direction: column
+    &__item
+        max-width: 450px
+    &__item-title
+        font-weight: 700
+        font-size: 16px
+        line-height: 19px
+        text-transform: uppercase
+        margin-bottom: 10px
+    &__item-text
+        font-size: 14px
+        line-height: 120%
+.features
+    margin-bottom: 10.5%
+    &__title
+        font-weight: 700
+        font-size: 16px
+        line-height: 19px
+        text-transform: uppercase
+        color: $black
+        margin-bottom: 40px
+    &__wrapper
+        display: flex
+    &__info
+        margin-right: 60px
+    &__image
+        width: 570px
+        height: 401px
+    &__box
+        width: 570px
+        margin-bottom: 33px
+        &:last-child
+            margin-bottom: 0
+    &__box-title
+        font-weight: 700
+        font-size: 14px
+        line-height: 17px
+        text-transform: uppercase
+        color: #FFFFFF
+        background-color: $black
+        padding: 2px 0
+        margin-bottom: 10px
+    &__data-item
+        display: flex
+        margin-bottom: 5px
+    &__data-text
+        text-align: left
+        font-size: 14px
+        line-height: 120%
+        color: $black
+        width: 285px
+
+    
