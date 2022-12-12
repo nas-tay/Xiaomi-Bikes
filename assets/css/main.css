@@ -39,16 +39,12 @@ a {
   color: #ffffff;
   background-color: #131313;
   padding: 28px 80px;
-  -webkit-transition: .2s;
-  transition: .2s;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .btn:hover {
   background-color: #FF4040;
-}
-
-.header {
-  margin-bottom: 100px;
 }
 
 .header__wrapper {
@@ -71,8 +67,8 @@ a {
   color: #131313;
   padding: 40px 20px;
   margin-right: 50px;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .header__nav-link:hover {
@@ -81,7 +77,7 @@ a {
 }
 
 .intro {
-  margin-bottom: 10.5%;
+  padding: 7% 0 10.5% 0;
 }
 
 .intro__wrapper {
@@ -145,8 +141,8 @@ a {
   margin-bottom: 10px;
   border: none;
   cursor: pointer;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: .5s ease-out;
+  transition: .5s ease-out;
 }
 
 .intro__slider-dots > li > button:hover {
@@ -192,7 +188,7 @@ a {
 }
 
 .advantages {
-  margin-bottom: 10.5%;
+  padding-bottom: 10.5%;
 }
 
 .advantages__wrapper {
@@ -233,7 +229,7 @@ a {
 }
 
 .features {
-  margin-bottom: 10.5%;
+  padding-bottom: 10.5%;
 }
 
 .features__title {
@@ -294,15 +290,8 @@ a {
   width: 285px;
 }
 
-.order__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .order__info {
-  width: 420px;
-  margin-right: 150px;
+  position: relative;
 }
 
 .order__info-title {
@@ -314,9 +303,14 @@ a {
 }
 
 .order__info-text {
+  width: 420px;
   font-size: 14px;
   line-height: 120%;
   margin-bottom: 30px;
+}
+
+.order__form {
+  width: 420px;
 }
 
 .order__form-input {
@@ -383,7 +377,7 @@ a {
 }
 
 .order__radios-input {
-  display: none;
+  opacity: 0;
 }
 
 .order__radios-label {
@@ -404,5 +398,47 @@ a {
 
 .order__radios-label--3 {
   background-color: #FF4040;
+}
+
+.order__image-box {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 720px;
+  height: 404px;
+}
+
+.order__image {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.order__price {
+  position: absolute;
+  top: 28px;
+  font-size: 32px;
+  line-height: 39px;
+  color: #131313;
+  border: 1px solid #FF4040;
+  border-radius: 50%;
+  padding: 30px 21px;
+  z-index: 1;
+}
+
+.order__price::after {
+  position: absolute;
+  content: "";
+  top: 12px;
+  left: 0px;
+  width: 221px;
+  height: 100px;
+  border: 1px solid #FF4040;
+  border-radius: 50%;
+}
+
+.order__radios-input:checked + .order__image-box {
+  display: block;
 }
 /*# sourceMappingURL=main.css.map */

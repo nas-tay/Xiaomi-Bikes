@@ -247,33 +247,43 @@
         </div>
         <section class="order">
             <div class="container">
-                <div class="order__wrapper">
-                    <div class="order__info">
-                        <h4 class="order__info-title">Заказать</h4>
-                        <p class="order__info-text">Если Вы хотите заказать велосипед, оставьте свой контакт и наш
-                            менеджер перезвонит вам в ближайшее время</p>
-                        <form action="" class="order__info-form order__form">
-                            <div>
-                                <input class="order__form-input" type="text" placeholder="имя">
-                            </div>
-                            <div>
-                                <input class="order__form-input" type="text" placeholder="телефон">
-                            </div>
-                            <p class="order__radios-title">выберите желаемый цвет</p>
-                            <div class="order__form-radios order__radios jcsb">
+                <div class="order__info">
+                    <h4 class="order__info-title">Заказать</h4>
+                    <p class="order__info-text">Если Вы хотите заказать велосипед, оставьте свой контакт и наш
+                        менеджер перезвонит вам в ближайшее время</p>
+                    <form action="" class="order__info-form order__form">
+                        <div>
+                            <input class="order__form-input" type="text" placeholder="имя">
+                        </div>
+                        <div>
+                            <input class="order__form-input" type="text" placeholder="телефон">
+                        </div>
+                        <p class="order__radios-title">выберите желаемый цвет</p>
+                        <div class="order__form-radios order__radios jcsb">
+                            <label class="order__radios-label order__radios-label--1" for="color-1">
                                 <input class="order__radios-input" type="radio" name="color" id="color-1">
-                                <label class="order__radios-label order__radios-label--1" for="color-1"></label>
-                                <input class="order__radios-input" type="radio" name="color" id="color-2">
-                                <label class="order__radios-label order__radios-label--2" for="color-2"></label>
+                                <div class="order__image-box">
+                                    <div class="order__price">32 999 грн.</div>
+                                    <img class="order__image" src="assets/images/order-1.jpg" alt="gray bike">
+                                </div>
+                            </label>
+                            <label class="order__radios-label order__radios-label--2" for="color-2">
+                                <input class="order__radios-input" type="radio" name="color" id="color-2" checked>
+                                <div class="order__image-box">
+                                    <div class="order__price">32 999 грн.</div>
+                                    <img class="order__image" src="assets/images/order-2.jpg" alt="white bike">
+                                </div>
+                            </label>
+                            <label class="order__radios-label order__radios-label--3" for="color-3">
                                 <input class="order__radios-input" type="radio" name="color" id="color-3">
-                                <label class="order__radios-label order__radios-label--3" for="color-3"></label>
-                            </div>
-                            <a href="" class="btn order__form-btn">ЗАКАЗАТЬ</a>
-                        </form>
-                    </div>
-                    <div class="order__slider">
-                        <img src="assets/images/order-slider-1.jpg" alt="bike">
-                    </div>
+                                <div class="order__image-box">
+                                    <div class="order__price">33 990 грн.</div>
+                                    <img class="order__image" src="assets/images/order-3.jpg" alt="red bike">
+                                </div>
+                            </label>
+                        </div>
+                        <a href="" class="btn order__form-btn">ЗАКАЗАТЬ</a>
+                    </form>
                 </div>
             </div>
         </section>
